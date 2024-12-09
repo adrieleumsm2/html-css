@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* em html é id = em css é # 
+    em html é class = em css é .
+*/
+
+body {
+    background-color: rgb(122, 137, 99);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+    h2  {
+        color: rgba(255, 255, 10, 0.537);
+     
+    }
+
+   h1#main{
+    color: bisque;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(133, 93, 93);
+    
+   }
+
+  #main2 {
+    color: rgb(105, 84, 124);
+    text-indent: 30px;
+    text-shadow: 1px 1px 5px rgb(133, 93, 93);
+  }
+
+  .htmlb{
+    color: #DD1468;
+    text-indent: 30px;
+    text-shadow: 1px 1px 3px rgb(162, 126, 126);
+  }
+
+  .htmli{
+    color: #8f1d4c8c;
+ text-indent: 30px; 
+ text-shadow: 1px 1px 3px #993848;
+
+  }
+
+  .lorem {
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  #h {
+    color: blue;
+    font-style: italic;
+    font-weight: 400;
+  }

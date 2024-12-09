@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Variáveis globais */
+:root {
+    --bg-color: #0c0c0c;
+    --text-color: #fff;
+    --main-color: #ae8947;
+
+    /* Fontes */
+    --big-font: 6.6rem;
+    --p-font: 1rem;
+}
+
+/* Corpo */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navegação */
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: inline-block;
+    margin: 0 35px;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    transition: color 0.6s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+/* Botão de navegação */
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 9px 24px;
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+    color: var(--text-color);
+    font-size: var(--p-font); /* Substituído 15px por var(--p-font) */
+    font-weight: 500;
+    transition: transform 0.3s ease, border-color 0.6s ease, color 0.6s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-5px);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+/* Ícone do menu */
+#menu-icon {
+    font-size: 2.625rem; /* 42px em rem */
+    z-index: 51;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* Seções */
+section {
+    padding: 0 14%;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color) url('bg.png') no-repeat center/cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/pequena.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="Imagens/media.jpg" type="image/jpeg">
+        <img src="Imagens/grande.jpg" alt="Foto">
+    </picture>
+    <h2>Vamos testar áudios no nosso site</h2>
+    <p>Aprendendo a reproduzir um áudio no site</p>
+    <!-- controls é para aparecer o botão de áudio, autoplay para reproduzir o áudio -->
+
+   <audio preload="metadata" controls>
+    <source src="audios/audio-ogg.ogg" type="audio/ogg">
+    <source src="audios/audio.mp3" type="audio/mpeg">
+    <p>se o seu navegador nao for compativel com nenhum formato <a href="audios/audio-wav.wav">voce pode baixar o audio aqui</a></p>
+
+   </audio>
+   <h1>Inserindo videos hospedados localmente</h1>
+   <p>este video esta hospedado no meu servidor</p>
+   <video width="560" controls loop poster="Imagens/istock-490178830.webp">
+    <source src="videos/fruit.mp4" type="video/mp4">
+    <source src="videos/fruit.m4v" type="video/mp4">
+    <source src="videos/fruit.webm" type="video/webm">
+    <source src="videos/fruit.ogv" type="video/ogg">
+    <p>esses videos nao sao compativeis com seu navegador <a href="videos/fruit.mp4">por gentileza abaixe-os</a></p>
+   
+    
+
+   </video>
+   <h1>Inserindo videos do Youyobe</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=o89-vjhTycWMQqKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <video src="https://fast.wistia.net/embed/iframe/dr88d8565u"></video>
+   <video src="https://fast.wistia.net/embed/iframe/dr88d8565u"></video>
+  <p></p>
+ 
+</body>
+</html>

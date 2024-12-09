@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de audio e video</title>
+</head>
+<body>
+    <h1>Vamos fazer uns re-testes de audios e videos</h1>
+    <p>Abaixo voce conseguira ver tres formatos <br>diferentes de audios</p>
+    <!-- comecei colocando a tag audio e ver se consigo fazer um audio dessa forma-->
+    <audio src="audios/audio.mp3"  controls loop></audio> <br>
+    <audio src="audios/audio-ogg.ogg" controls></audio><br>
+    <audio src="audios/audio-wav.wav" controls></audio>
+    <!-- Tudo esta funcionando de forma certa -->
+     <audio preload="metadata" controls>
+        <source src="audios/audio.mp3" type="audio/mpeg">
+        <source src="audios/audio-ogg.ogg" type="audio/ogg">
+        <p>se nemhum desses dois audios  nao carregarem <a href="audios/audio.mp3">tente ouvir apos baixalo no seu pc</a></p>
+     </audio>
+     <h1>Tambem existe videos localmente</h1>
+     <p>Vamos fazer mais dois testes</p>
+     <!-- videos locais dao certos!-->
+     <video src="videos/fruit.mp4" width="500" controls loop></video>
+     <video width="550" controls loop>
+        <source src="videos/fruit.mp4" type="video/mp4">
+        <source src="videos/fruit.mp4" type="videp/m4v">
+        <p>se ambos videos nao reproduzirem no seu navegador <a href="videos/fruit.mp4">por favor certifique-se de baixa-lo</a></p>
+     </video>
+     <h1>videos sem ser locais, diretos do youtobe ou qualquer hospedadora</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/VfIXgGJWLvA?si=5YjT-FHFghM8NPp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   <!--Listas ordenadas abaix0-->
+     <ol type="i">
+       <li >ksksks</li>
+       <li>beber cafe</li>
+       <li>dormir</li>
+     </ol>
+     <!-- listas nao ordenadas n seguem ordem-->
+      <ul>
+        <li>ksksksksk</li>
+        <li>ir dormir</li>
+        <li>tomar banho</li>
+      </ul>
+     <ol>
+        <li>jogos</li>
+        <ul type="square">
+            <li>mario</li>
+            <li>mario wonder</li>
+            <ul>
+                <li>mario 3</li>
+                <li>mario cllr de botao</li>
+            </ul>
+        </ul>
+     </ol>
+  <dl>
+    <dt>O termo</dt>
+    <dd>Definicaoo do termo</dd>
+    
+  </dl>
+  <blockquote cite="https://www.google.com.br/books/edition/Instant_Google_Drive_Starter/tnTUXfE6oSIC?hl=pt-BR&gbpv=1&dq=pdf+google&pg=PT84&printsec=frontcover">
+     Tip 
+         
+     Sharing a file from a <mark>Google</mark> program 
+
+    The built-in <mark>Google</mark> programs (Docs, Sheets, Slides, and 
+    Drawing) as well the <mark>Google</mark> Driver Viewer all let you 
+    share from directly within the program. In each program, 
+    simply click on the <strong>Share...</strong> option from the <strong>file</strong> menu at <br>
+    the top.
+  </blockquote>
+    
+</body>
+</html>

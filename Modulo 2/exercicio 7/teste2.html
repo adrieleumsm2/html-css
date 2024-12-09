@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    div > p {
+        display: none;
+        
+    }
+
+    div:hover > p {
+        display: block;
+        color: white;
+      
+       height: 100px;
+       width: 300px;
+       text-align: center;
+    }
+
+    div:hover {
+        color: white;
+        text-align: center;
+    }
+        div {
+            color: white;
+            text-align: center;
+            display: inline-block;
+            background-color:blue;
+
+        }
+
+        .red {
+            height: 100px;
+            width: 200px;
+            text-align: center;
+           
+        }
+
+        .yellow {
+            height: 100px;
+            width: 200px;
+            text-align: center;
+        }
+        
+        .black {
+            height: 100px;
+            width: 200px;
+            text-align: center;
+        }
+
+        div.red:hover {
+            background-color: red;
+            color: white;
+        }
+
+        div.yellow:hover {
+            background-color: yellow;
+            color: blue;
+        }
+
+        div.black:hover {
+            background-color: black;
+            color: brown;
+        }
+
+        div.mouse {
+
+            border: 10px;
+            background-color: green;
+            color: black;
+            height: 100px;
+            width: 200px;
+           
+            
+
+        }
+
+      .mouse:hover {
+        text-align: center;
+        margin: 0px;
+      }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div class="red">bloco 1</div>
+    <div class="yellow">bloco 2</div>
+    <div class="black"> bloco 3</div>
+
+    <h1>teste de hover</h1>
+    <p>passe seu mouse para aparecer o texto apagado</p>
+    <div class="mouse">
+        passe seu mouse aqui
+        <p>
+            TEXTO ESCONDIDO...
+        </p>
+    </div>
+</body>
+</html>
