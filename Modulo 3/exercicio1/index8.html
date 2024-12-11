@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+
+            /* Position relative é relacionado com o conteudo */
+            
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            padding: 10px;
+            height: 96vh;
+            background-color: purple;
+        }
+
+        #conteudo {
+            /* Position absolue nao tem nada haver com meu conteudo */
+
+            /* tambem posso configurar duas propriedades que sao LEFT, TOP, porem tambem podemos trabalhar com % e px */
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-200px, -100px);
+
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
